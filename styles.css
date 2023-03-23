@@ -1,0 +1,22 @@
+:root{
+    --color: #e6007e;
+    --text: rgb(185,185,185);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: var(--txt);
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+img[src]{
+    max-width: 100%;
+    max-height: 100%;
+
+}
