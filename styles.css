@@ -1,6 +1,8 @@
 :root{
     --color: #e6007e;
     --text: rgb(185,185,185);
+    --mocha: #d07719;
+    --dance: 'Dancing Script', cursive;
 }
 
 *{
@@ -25,7 +27,7 @@
 .left-side{
     background-image: url(./images/brooke-cagle-9fHMo1-5Io8-unsplash.jpg);
     background-position: center;
-    background-size: auto;
+    background-size: auto 600%;
     background-repeat: no-repeat;
     width: 40vw;
     display: flex;
@@ -33,19 +35,25 @@
 }
 
 .logo{
+    display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
+    padding: 15px 0;
 }
 
 .coffee{
+    display: flex;
     height: 10vh;
     border-radius: 5px;
 }
 
-h1{
-    color: white;
-    font-size: 2.5rem;
+.logo > h1{
+    display: flex;
+    flex-basis: 1;
+    font-family: var(--dance);
+    color: rgba(252,239,222);
+    font-size: 3.5rem;
 }
 
 .image-caption{
@@ -57,4 +65,75 @@ h1{
 /* right side of webpage */
 .right-side{
     width: 60vw;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    padding-left: 5vw;
+}
+
+.snippet{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.snippet > :first-child{
+    font-family: var(--dance);
+    font-size: 2.5rem;
+}
+
+.login-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.form-top > h1{
+    font-family: var(--dance);
+    font-size: 2.5em;
+}
+
+.form{
+    display: flex;
+    flex-flow: row nowrap;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;    padding-top: 10px;
+    gap: 20px;
+    padding: 20px;
+}
+
+.input{
+    display: flex;
+    flex-flow: row wrap;
+    font-size: 1.4rem;
+    opacity: 80%;
+    gap: 4px;
+}
+
+input:focus{
+    outline: none;
+    border: 2px solid var(--mocha)
+}
+
+button{
+    font-weight: 600;
+    font-size: 1.4em;
+    font-family: var(--dance);
+    padding: 5px 10px;
+    margin: 40px 0;
+}
+
+button:hover{
+    background-color: var(--mocha);
+    color: white;
+}
+
+.login{
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: var(--mocha);
 }
