@@ -10,22 +10,24 @@
 <body>
     <div class="content">
         <div class="left-side">
-            <img src="./images/brooke-cagle-9fHMo1-5Io8-unsplash.jpg" alt="barista-giving coffee">
-            <p>
+            <div class="logo">
+              <img src="./images/coffee-with-love.jpg" alt="Image by catalyststuff on Freepik" class="coffee">
+              <h1>Cupid's Cafe</h1>  
+            </div>
+            <p class="image-caption">
                 Photo by <a href="https://unsplash.com/@brookecagle?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Brooke Cagle</a> on <a href="https://unsplash.com/photos/9fHMo1-5Io8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  
             </p>
         </div>
         <div class="right-side">
             <form id="signup-form" class="signup-form" novalidate>
+                <h1>Let's do this!</h1>
                 <div>
                     <label for="first-name">First name</label>
-                    <input type="text" id="first-name" name="first-name" value="">
-                    
+                    <input type="text" id="first-name" name="first-name">
                 </div>
                 <div>
                     <label for="last-name">Last name</label>
-                    <input type="text" id="last-name" name="last-name" >
+                    <input type="text" id="last-name" name="last-name">
                 </div>
                 <div>
                     <label for="email">Email</label>
@@ -43,10 +45,14 @@
                     <label for="confirm-password">Confirm password</label>
                     <input type="password" name="confirm-password">
                 </div>
+                <button type="submit">Create Account</button>
             </form>
-            <p>
-                <button>Create Account</button>
-            </p>
+            <div>
+                <p>
+                    Already have an account?
+                </p>
+                <a href="#">Log in</a>
+            </div>
         </div>
     </div>
 </body>
